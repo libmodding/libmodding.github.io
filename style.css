@@ -1,0 +1,344 @@
+/* ===== GLOBAL ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: black;
+  font-family: 'Silkscreen', monospace;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+/* ===== MATRIX BACKGROUND ===== */
+#matrix-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.container {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== TITLE ===== */
+.title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow:
+    0 0 8px #ffffff,
+    0 0 20px #aaaaaa,
+    0 0 40px #cccccc;
+}
+
+/* ===== SEARCH BAR ===== */
+.search-wrapper {
+  width: 100%;
+  max-width: 600px;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  padding: 12px 20px 12px 40px;
+  box-shadow:
+    0 0 15px #ffffff,
+    0 0 30px #aaaaaa;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.search-wrapper input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #cccccc;
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #aaaaaa;
+  pointer-events: none;
+}
+
+/* ===== CARD GRID ===== */
+.cards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* ===== GAME CARD ===== */
+.game-card {
+  width: 240px;
+  height: 280px;
+  background: rgba(0,0,0,0.75);
+  border: 3px solid #ffffff;
+  border-radius: 18px;
+  box-shadow:
+    0 0 10px #ffffff,
+    0 0 20px #aaaaaa;
+  transition: transform .3s, box-shadow .3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.game-card:hover {
+  transform: scale(1.06);
+  box-shadow:
+    0 0 25px #ffffff,
+    0 0 50px #aaaaaa;
+}
+
+/* ===== CARD BUTTONS ===== */
+.card-buttons {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.card-buttons button {
+  flex: 1;
+  background: black;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: 'Silkscreen', monospace;
+  font-size: 0.85rem;
+  padding: 8px;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  box-shadow:
+    0 0 8px #ffffff,
+    0 0 15px #aaaaaa;
+  transition: all .2s;
+}
+
+.card-buttons button:hover {
+  background: #ffffff;
+  color: black;
+  box-shadow:
+    0 0 20px #ffffff,
+    0 0 35px #aaaaaa;
+}
+
+/* ===== IMAGE ===== */
+.game-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: black;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  box-shadow:
+    0 0 12px #ffffff,
+    0 0 20px #aaaaaa;
+}
+
+.game-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== GAME TITLE ===== */
+.game-name {
+  margin-top: 6px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #aaaaaa;
+}
+/* ===== GLOBAL ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: black;
+  font-family: 'Silkscreen', monospace;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+/* ===== MATRIX BACKGROUND ===== */
+#matrix-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.container {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== TITLE ===== */
+.title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow:
+    0 0 8px #ffffff,
+    0 0 20px #aaaaaa,
+    0 0 40px #cccccc;
+}
+
+/* ===== SEARCH BAR ===== */
+.search-wrapper {
+  width: 100%;
+  max-width: 600px;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  padding: 12px 20px 12px 40px;
+  box-shadow:
+    0 0 15px #ffffff,
+    0 0 30px #aaaaaa;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.search-wrapper input {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #cccccc;
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #aaaaaa;
+  pointer-events: none;
+}
+
+/* ===== CARD GRID ===== */
+.cards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* ===== GAME CARD ===== */
+.game-card {
+  width: 240px;
+  height: 280px;
+  background: rgba(0,0,0,0.75);
+  border: 3px solid #ffffff;
+  border-radius: 18px;
+  box-shadow:
+    0 0 10px #ffffff,
+    0 0 20px #aaaaaa;
+  transition: transform .3s, box-shadow .3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.game-card:hover {
+  transform: scale(1.06);
+  box-shadow:
+    0 0 25px #ffffff,
+    0 0 50px #aaaaaa;
+}
+
+/* ===== CARD BUTTONS ===== */
+.card-buttons {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.card-buttons button {
+  flex: 1;
+  background: black;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: 'Silkscreen', monospace;
+  font-size: 0.85rem;
+  padding: 8px;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  box-shadow:
+    0 0 8px #ffffff,
+    0 0 15px #aaaaaa;
+  transition: all .2s;
+}
+
+.card-buttons button:hover {
+  background: #ffffff;
+  color: black;
+  box-shadow:
+    0 0 20px #ffffff,
+    0 0 35px #aaaaaa;
+}
+
+/* ===== IMAGE ===== */
+.game-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: black;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid #ffffff;
+  box-shadow:
+    0 0 12px #ffffff,
+    0 0 20px #aaaaaa;
+}
+
+.game-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== GAME TITLE ===== */
+.game-name {
+  margin-top: 6px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow:
+    0 0 5px #ffffff,
+    0 0 10px #aaaaaa;
+}
