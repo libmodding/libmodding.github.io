@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>END DIMENSION GAMES</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- MATRIX BACKGROUND -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="title">END DIMENSION GAMES</div>
+
+    <!-- SEARCH BAR -->
+    <div class="search-wrapper">
+      <span class="search-icon">🔍</span>
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search games..."
+        autocomplete="off"
+      >
+    </div>
+
+    <!-- GAME CARDS -->
+    <div class="cards-container">
+
+      <!-- GAME CARD -->
+      <div class="game-card"
+        data-title="Tag"
+        data-url-main="https://sites.google.com/view/endless-dimension-end/school4life/html-gmes/html/t/tag"
+        data-url-blank="https://www.google.com/?safe=active&ssui=on">
+
+        <!-- CARD BUTTONS -->
+        <div class="card-buttons">
+          <button onclick="openAboutBlank(this)">About:Blank</button>
+          <button onclick="openBlob(this)">Blob</button>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="game-image">
+          <img
+            src="https://cdn.jsdelivr.net/gh/libmodding/schoolsitesislife@main/picture%20450x300.webp"
+            alt="Tag"
+            loading="lazy"
+          >
+        </div>
+
+        <!-- TITLE -->
+        <div class="game-name">Tag</div>
+
+      </div>
+      <!-- END CARD -->
+
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
 
